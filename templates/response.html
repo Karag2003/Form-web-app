@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Response</title>
-  </head>
-  <body>
-    <h1>Response:</h1>
-    <p>{{ response }}</p>
-  </body>
-</html>
+{% extends "layout.html" %}
+	{% block content %}
+    	<h1>Your new password:</h1>
+    	<h2>{{ response }}</h2>
+    {% endblock %}

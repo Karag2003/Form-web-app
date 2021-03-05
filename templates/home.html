@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Password Generator</title>
-  </head>
-  <body>
-
-    <form action='/response'>
+{% extends "layout.html" %}
+  {% block content %}
+  <h1>Please answer the following questions about yourself so that we can generate a personalized password. </h1>
+    <form action='/response' class = "text">
       What is your favorite number?<br>
       <input type="text" name="num">
       <br><br>
@@ -15,8 +11,7 @@
        What is your favorite sport?<br>
       <input type="text" name="sport">
       <br><br>
-      <input type="submit">
+      <input type="submit" id="check">
     </form>
+    {% endblock %}
 
-  </body>
-</html>
