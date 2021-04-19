@@ -6,11 +6,11 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 def render_main():
     return render_template('home.html')
 
-@app.route("/response")
+@app.route("/response", methods=['POST'])
 def render_response():
-    number = request.args['num'] 
-    food = request.args['food']
-    sport = request.args['sport']
+    number = request.form['num'] 
+    food = request.form['food']
+    sport = request.form['sport']
     end = 3
     end1 = 2
     #The request object stores information about the request sent to the server.
